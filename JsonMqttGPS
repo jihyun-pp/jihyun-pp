@@ -1,0 +1,103 @@
+/*
+  SimpleMQTTClient.ino
+  The purpose of this exemple is to illustrate a simple handling of MQTT and Wifi connection.
+  Once it connects successfully to a Wifi network and a MQTT broker, it subscribe to a topic and send a message to it.
+  It will also send a message delayed 5 seconds later.
+*/
+#define RXD2 16
+#define TXD2 17
+#include "EspMQTTClient.h"
+#include <ArduinoJson.h>
+
+char msgStr; // \n인지 구분 및 str에 저장
+String str = "";  // \n전까지 msgStr 값 저장
+String targetStr = "GPGGA";
+
+EspMQTTClient client(
+  "AFTERNOON",
+  "oh.afternoon0",
+  "192.168.45.124",  // MQTT Broker server ip
+  "user1",   // Can be omitted if not needed
+  "12345",   // Can be omitted if not needed
+  "TestClient",     // Client name that uniquely identify your device
+  1883              // The MQTT port, default to 1883. this line can be omitted
+);
+
+void setup()
+{
+  Serial.begin(115200);
+  Serial2.begin(9600);
+  delay(2000);
+  Serial.println(); Serial.println("######################## GPS MQTT ########################");
+
+  // Optionnal functionnalities of EspMQTTClient :
+  //client.enableDebuggingMessages(); // Enable debugging messages sent to serial output
+  client.enableHTTPWebUpdater(); // Enable the web updater. User and password default to values of MQTTUsername and MQTTPassword. These can be overrited with enableHTTPWebUpdater("user", "password").
+  client.enableLastWillMessage("TestClient/lastwill", "I am going offline");  // You can activate the retain flag by setting the third parameter to true
+}
+
+// This function is called once everything is connected (Wifi and MQTT)
+// WARNING : YOU MUST IMPLEMENT IT IF YOU USE EspMQTTClient
+void onConnectionEstablished()
+{
+  // Subscribe to "mytopic/test" and display received message to Serial
+  client.subscribe("mytopic/test", [](const String & payload) {
+    Serial.println(payload);
+  });
+
+  // Subscribe to "mytopic/wildcardtest/#" and display received message to Serial
+  client.subscribe("mytopic/wildcardtest/#", [](const String & topic, const String & payload) {
+    Serial.println("(From wildcard) topic: " + topic + ", payload: " + payload);
+  });
+
+  // Publish a message to "mytopic/test"
+  client.publish("mytopic/test", "This is a message");
+
+  // Execute delayed instructions
+  client.executeDelayed(5 * 1000, []() {
+    client.publish("mytopic/wildcardtest/test123", "This is a message sent 5 seconds later");
+  });
+}
+
+String makeJson(String str) {
+  int pos[6] = {0,};            // 콤마의 위치
+  int start = 0;                // 검색 시작 위치
+
+  for (int i = 0; i < 6; i++) {
+    pos[i] = str.indexOf(',', start + 1);
+    start = pos[i];
+  }
+
+  //String t = str.substring(pos[0] + 1, pos[1]); // 시간
+  String lat = str.substring(pos[1] + 1, pos[2]) + str.substring(pos[2] + 1, pos[3]); // 위도
+  String lon = str.substring(pos[3] + 1, pos[4]) + str.substring(pos[4] + 1, pos[5]); // 경도
+
+  String jsondata = "";
+  StaticJsonBuffer<300> jsonBuffer;  // ArduinoJson 5.13.5 선택
+  JsonObject& root = jsonBuffer.createObject();
+  //root["time"] = t;
+  root["latitude"] = lat;     // 위도
+  root["longitude"] = lon;    // 경도
+  
+  //client.publish("mytopic/test", root);  // mqtt 출력
+  root.printTo(jsondata); //String으로 변환
+  return jsondata;
+}
+
+void loop()
+{
+  if (Serial2.available()) {
+    msgStr = Serial2.read();  // 센서값 읽기
+
+    if (msgStr == '\n') {
+      if (targetStr.equals(str.substring(1, 6))) {  // GPGGA 찾기
+        client.publish("mytopic/test", makeJson(str));  // mqtt 출력
+      }
+      str = "";
+    } else {
+      str += msgStr;
+    }
+  }
+
+  client.loop();
+}
