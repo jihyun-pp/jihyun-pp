@@ -1,8 +1,15 @@
-### Hi there 👋
+<!--![waving](https://capsule-render.vercel.app/api?type=waving&height=200&text=Hi%20there&fontAlign=80&fontAlignY=40&color=gradient)-->
+
+## _Hi there_ 👋
 
 <!--
-**jihyun-pp/jihyun-pp** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+ - markdown
+    글자크기 : #(h1) ~ ######(h6)
+    이탤릭 : _ _ | * *
+    볼드 : __ __ | ** **
+    인용 : >
 
+**jihyun-pp/jihyun-pp** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 Here are some ideas to get you started:
 
 - 🔭 I’m currently working on ...
