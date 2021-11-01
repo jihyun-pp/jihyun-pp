@@ -22,9 +22,9 @@ I'm studying in HYWUniv.<br/>
 
 
 ### 📮 ME 
-[![Gmail Badge](https://img.shields.io/badge/Gmail-d14836?style=flat-square&logo=Gmail&logoColor=white&link=mailto:qkrwlw1211@gmail.com)](mailto:qkrwlw1211@gmail.com)
+<!-- [![Gmail Badge](https://img.shields.io/badge/Gmail-d14836?style=flat-square&logo=Gmail&logoColor=white&link=mailto:qkrwlw1211@gmail.com)](mailto:qkrwlw1211@gmail.com)
 [![Instagram Badge](https://img.shields.io/badge/Instagram-E4405F?style=flat-square&logo=Instagram&logoColor=white&link=https://www.instagram.com/xgraypondx/)](https://www.instagram.com/xgraypondx/)
-[![Velog Badge](https://img.shields.io/badge/Velog-01DFA5?style=flat-square&logo=Velog&logoColor=white&link=https://https://velog.io/@qkrwl1211)](https://velog.io/@qkrwl1211)
+[![Velog Badge](https://img.shields.io/badge/Velog-01DFA5?style=flat-square&logo=Velog&logoColor=white&link=https://https://velog.io/@qkrwl1211)](https://velog.io/@qkrwl1211) -->
 
 
 <!--
