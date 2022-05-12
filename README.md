@@ -5,7 +5,7 @@
 <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white"/> <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=Node.js&logoColor=white"/>  <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=Java&logoColor=white"/>  <img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=Spring&logoColor=white"/> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white"/>  -->
 
 <!-- 사용 언어 비율 -->
-<!-- [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jihyun-pp)](https://github.com/jihyun-pp/github-readme-stats) -->
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jihyun-pp)](https://github.com/jihyun-pp/github-readme-stats)
 
 <!-- 깃허브 상태 (평가) -->
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=jihyun-pp)](https://github.com/jihyun-pp/github-readme-stats)
