@@ -1,19 +1,19 @@
 ### _Hi, there! I'm JIHYUN 🐳_
 <!-- 마크다운 링크 !!  https://github.com/Ileriayo/markdown-badges  -->
 <!-- 사용 언어 -->
-![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=flat-square&logo=c-sharp&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=flat-square&logo=python&logoColor=ffdd54) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=flat-square&logo=node.js&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=flat-square&logo=java&logoColor=white) ![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=flat-square&logo=spring&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=flat-square&logo=javascript&logoColor=%23F7DF1E)
+![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=flat-square&logo=c-sharp&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=flat-square&logo=javascript&logoColor=%23F7DF1E) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=flat-square&logo=node.js&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=flat-square&logo=java&logoColor=white) ![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=flat-square&logo=spring&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=flat-square&logo=python&logoColor=ffdd54) 
 
 ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=flat-square&logo=mysql&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=flat-square&logo=mongodb&logoColor=white)
 
 <!-- 깃허브 상태 (평가) -->
-<!-- [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=jihyun-pp)](https://github.com/jihyun-pp/github-readme-stats) -->
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=jihyun-pp)](https://github.com/jihyun-pp/github-readme-stats)
 
 
 <!-- ![waving](https://capsule-render.vercel.app/api?type=waving&height=200&text=Hi%20I'm%20JIHYUN&fontAlign=50&fontAlignY=40&color=gradient) -->
 <!-- ![Jihyun's GitHub stats](https://github-readme-stats.vercel.app/api?username=jihyun-pp&bg_color=30,e96443,904e95&title_color=fff&text_color=fff) -->
 
 <!-- 사용 언어 비율 -->
-<!-- [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jihyun-pp)](https://github.com/jihyun-pp/github-readme-stats) -->
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jihyun-pp)](https://github.com/jihyun-pp/github-readme-stats)
 
 
 
