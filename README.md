@@ -1,4 +1,4 @@
-### Hi, there! I'm Jihyun, a growing BackEnd Developer
+_Hi, there! I'm Jihyun, a growing BackEnd Developer_
 
 <!-- 마크다운 링크 !!  https://github.com/Ileriayo/markdown-badges  -->
 <!-- 사용 언어 -->
